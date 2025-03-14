@@ -1,0 +1,156 @@
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #F7F8FA /* #E2F1DA*/ ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #F7F8FA;
+    padding: 20px;
+    border-radius: 8px;
+    /*box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);*/
+    text-align: center;
+    width: 320px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("/images/logo_cbta_284.png"); /* Imagen de usuario */
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 64px auto;
+}
+
+h2 {
+    color: #004D32;
+}
+
+/* label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #0D6B3F;
+}
+
+input {
+    width: calc(100% - 16px); /* Ajustar por el padding de 8px en cada lado
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #004D32;
+    border-radius: 4px;
+}*/
+
+button {
+    background-color: #0D6B3F /*#004d32*/;
+    color: #f7f8fa;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 33%;
+    cursor: pointer;
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+}
+
+button:hover {
+    background-color: #C5E1A5;
+    color: #004d32;
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+a {
+    color: #004D32;
+    text-decoration: none;
+}
+
+/* From Uiverse.io by AbanoubMagdy1 */
+.wave-group {
+  position: relative;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.wave-group .input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 2px solid #004d32;
+  background: transparent;
+}
+
+.wave-group .input:focus {
+  outline: none;
+  border:none;
+  background: white;
+}
+
+.wave-group .label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  display: flex;
+}
+
+.wave-group .label-char {
+  transition: 0.2s ease all;
+  transition-delay: calc(var(--index) * .05s);
+}
+
+.wave-group .input:focus ~ label .label-char,
+.wave-group .input:valid ~ label .label-char {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #004d32;
+}
+
+.wave-group .bar {
+  position: relative;
+  display: block;
+  width: 315px;
+}
+
+.wave-group .bar:before,.wave-group .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #C5E1A5;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.wave-group .bar:before {
+  left: 50%;
+}
+
+.wave-group .bar:after {
+  right: 50%;
+}
+
+.wave-group .input:focus ~ .bar:before,
+.wave-group .input:focus ~ .bar:after {
+  width: 50%;
+}
+
+
